@@ -1,0 +1,19 @@
+# MATLAB
+*.asv
+*.m~
+slprj/
+*_ert_rtw/
+*.slxc
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+._.DS_Store
+.vscode/
+.idea/
+
+# Files that embed local paths or private notes; kept on this machine only
+local_only/
