@@ -4,7 +4,9 @@ clc
 close all
 i=1;
 
-load('experiment_1.mat')
+% The data files are in data/ at the repository root; the path is rebuilt in
+% each load because the clearvars calls below would wipe a path variable.
+load(fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'experiment_1.mat'))
 mean(delta_battery.Variables)
 median(delta_battery.Variables)
 
@@ -53,7 +55,7 @@ exportgraphics(ax,'TA_boxplot_experiment1.pdf')
 %% experiment 2
 
 clearvars -except i
-load('experiment_2.mat')
+load(fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'experiment_2.mat'))
 mean(delta_battery.Variables)
 median(delta_battery.Variables)
 
@@ -94,7 +96,7 @@ exportgraphics(ax,'TA_boxplot_experiment2.pdf')
 %% experiment 3
 
 clearvars -except i
-load('experiment_3.mat')
+load(fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'experiment_3.mat'))
 mean(delta_battery.Variables)
 median(delta_battery.Variables)
 
@@ -141,11 +143,11 @@ f.OuterPosition=[1960,1168,560,422];
 
 clear delta_bat
 
-load('delta_bat_auction.mat')
+load(fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'delta_bat_auction.mat'))
 delta_batAUCTION=delta_bat;
 clear delta_bat
 
-load('delta_bat_random.mat')
+load(fullfile(fileparts(mfilename('fullpath')), '..', 'data', 'delta_bat_random.mat'))
 delta_batRANDOM=delta_bat;
 clear delta_bat
 

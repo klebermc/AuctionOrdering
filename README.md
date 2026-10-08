@@ -33,7 +33,8 @@ for real-UAV validation are also included.
     `statistical_analysis.m` — simulation and batch-experiment drivers.
 - `real_uavs/auction_with_real_uavs.slx` — Simulink model for real-UAV auction-ordering
   validation.
-- `data/` — experiment `.mat` outputs (random vs. auction, with/without battery decay).
+- `data/` — experiment `.mat` outputs (random vs. auction, with/without battery decay);
+  `src/statistical_analysis.m` and `src/Auction/rerun_experiments.m` load from here.
 - `figures/` — paper figure sources (`.odg`/`.png`/`.pdf`/`.fig`), including a `thesis/`
   subfolder of figure variants used in the PhD thesis.
 - `statistical_analysis/` — the paper's statistical comparison package (rank-sum/t-test

@@ -13,7 +13,7 @@
 %     positions=[];
 % 
     rng(0);
-    load('experiment_1.mat')
+    load(fullfile(fileparts(mfilename('fullpath')), '..', '..', 'data', 'experiment_1.mat'))
     plot_assignment_figs_paper_3d
     initial_pos_config=1;
     useRealisticSim=true;
